@@ -59,7 +59,7 @@ sudo apt-get install gawk
 ```
 
 
-### cd tools
+### cd kaldi/tools
 
 * To check the prerequisites for Kaldi, first run
 
@@ -115,7 +115,7 @@ extras/install_srilm.sh
 
 ```
 
-### cd ../src
+### cd kaldi/src
 
 ```
 ./configure --shared
@@ -123,6 +123,20 @@ extras/install_srilm.sh
 make depend -j 4
 
 make -j 4
+
+```
+
+### Install sgmm binaries
+
+```
+
+cd kaldi/src/sgmm2 
+
+make
+
+cd kaldi/src/sgmm2bin
+
+make
 
 ```
 
