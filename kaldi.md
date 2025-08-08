@@ -21,7 +21,7 @@ docker run --gpus 0 -e NVIDIA_VISIBLE_DEVICES=0 --shm-size 4G -it --rm -v $PWD:/
 
 ```
 
-* Install sgmm binaries
+## Install sgmm binaries
 
 ### cd kaldi/src/sgmm2
 
@@ -129,7 +129,7 @@ make -j 4
 
 ```
 
-* Install sgmm binaries
+## Install sgmm binaries
 
 ### cd kaldi/src/sgmm2
 
