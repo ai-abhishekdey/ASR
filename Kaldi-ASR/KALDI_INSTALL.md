@@ -38,6 +38,18 @@ make
 
 ```
 
+## Install irstlm and srilm
+
+
+### cd kaldi/tools
+
+```
+extras/install_irstlm.sh
+
+extras/install_srilm.sh
+
+```
+
 ## Method 2. Using github repository clone
 
 ```
