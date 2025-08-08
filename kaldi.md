@@ -1,9 +1,9 @@
 
-## Kaldi Installation Steps:
+# Kaldi Installation Steps:
 
 **Author: Abhishek Dey**
 
-## 1. Kaldi Installation using Docker image
+## Method 1. Using Docker image
 
 * Based on your CUDA and NVIDIA-Driver versions, Pull docker image from [docker hub](https://hub.docker.com/r/kaldiasr/kaldi/tags)
 
@@ -23,19 +23,22 @@ docker run --gpus 0 -e NVIDIA_VISIBLE_DEVICES=0 --shm-size 4G -it --rm -v $PWD:/
 
 * Install sgmm binaries
 
+### cd kaldi/src/sgmm2
+
 ```
-
-cd /opt/kaldi/src/sgmm2 
-
-make
-
-cd /opt/kaldi/src/sgmm2bin
 
 make
 
 ```
 
-## 2. Kaldi Installation using github repo
+### cd kaldi/src/sgmm2bin
+
+```
+make
+
+```
+
+## Method 2. Using github repository clone
 
 ```
 git clone https://github.com/kaldi-asr/kaldi
@@ -126,16 +129,19 @@ make -j 4
 
 ```
 
-### Install sgmm binaries
+* Install sgmm binaries
+
+### cd kaldi/src/sgmm2
 
 ```
 
-cd kaldi/src/sgmm2 
-
 make
 
-cd kaldi/src/sgmm2bin
+```
 
+### cd kaldi/src/sgmm2bin
+
+```
 make
 
 ```
